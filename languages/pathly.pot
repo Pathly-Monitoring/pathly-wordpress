@@ -1,0 +1,349 @@
+# Copyright (C) 2026 Pathly
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pathly 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pathly\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-02T21:11:13+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: pathly\n"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: pathly.php
+msgid "Pathly"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: pathly.php
+msgid "https://pathlyhq.com/"
+msgstr ""
+
+#. Description of the plugin
+#: pathly.php
+msgid "Connects your site to Pathly: a Ping on your home page, a Flow on your checkout, contact form or login, replayed after each update, and their status on your dashboard."
+msgstr ""
+
+#: includes/class-pathly-admin.php:114
+msgid "Settings"
+msgstr ""
+
+#: includes/class-pathly-admin.php:155
+msgid "You are not allowed to change Pathly settings."
+msgstr ""
+
+#: includes/class-pathly-admin.php:180
+msgid "This is not a Pathly API key. It starts with sp_."
+msgstr ""
+
+#: includes/class-pathly-admin.php:186
+msgid "Pathly refused this key. Check that it is active and has the scopes listed below."
+msgstr ""
+
+#: includes/class-pathly-admin.php:191
+msgid "Connected. Pathly now pings your home page every five minutes."
+msgstr ""
+
+#: includes/class-pathly-admin.php:203
+msgid "Disconnected. Your Ping and Flow are still in your Pathly account."
+msgstr ""
+
+#: includes/class-pathly-admin.php:215
+msgid "Connect your site to Pathly first."
+msgstr ""
+
+#: includes/class-pathly-admin.php:227
+msgid "Lumi is exploring your site. It takes one to three minutes."
+msgstr ""
+
+#: includes/class-pathly-admin.php:237
+msgid "Flow saved. Pathly runs it now, then after each update of WordPress, a plugin or a theme."
+msgstr ""
+
+#: includes/class-pathly-admin.php:258
+msgid "Badge on. Add the [pathly_badge] shortcode or the Pathly badge block where you want it."
+msgstr ""
+
+#: includes/class-pathly-admin.php:261
+msgid "Badge off. Its status page is no longer public."
+msgstr ""
+
+#: includes/class-pathly-admin.php:295
+msgid "Pathly watches the path of your visitors: a Ping checks that the site answers, a Flow walks your checkout, contact form or login in a real browser."
+msgstr ""
+
+#: includes/class-pathly-admin.php:313
+msgid "Connection"
+msgstr ""
+
+#. translators: %s: masked API key.
+#: includes/class-pathly-admin.php:316
+#, php-format
+msgid "Connected with the key %s."
+msgstr ""
+
+#: includes/class-pathly-admin.php:318
+msgid "Ping: your home page is checked every five minutes."
+msgstr ""
+
+#: includes/class-pathly-admin.php:321
+msgid "Disconnect"
+msgstr ""
+
+#: includes/class-pathly-admin.php:325
+msgid "No account yet? The Solo plan is free, without a card."
+msgstr ""
+
+#: includes/class-pathly-admin.php:325
+msgid "Create a free account"
+msgstr ""
+
+#: includes/class-pathly-admin.php:327
+msgid "Pathly API key"
+msgstr ""
+
+#: includes/class-pathly-admin.php:329
+msgid "Create it in Pathly, Settings, Integrations. Prefer a key limited to one Space, with the scopes org:read, scenarios:read, scenarios:write, runs:read, runs:trigger, assistant:run, assistant:save, status:read and status:write."
+msgstr ""
+
+#: includes/class-pathly-admin.php:329
+msgid "Open API keys"
+msgstr ""
+
+#: includes/class-pathly-admin.php:330
+msgid "Connect"
+msgstr ""
+
+#: includes/class-pathly-admin.php:343
+msgid "Your Flow is saved. Pathly replays it after each update of WordPress, a plugin or a theme."
+msgstr ""
+
+#. translators: %s: error message.
+#: includes/class-pathly-admin.php:347
+#, php-format
+msgid "Last replay could not start: %s"
+msgstr ""
+
+#: includes/class-pathly-admin.php:351
+msgid "Lumi, the Pathly assistant, reads your site and prepares a Flow. It replays each proposal once before showing it. It pays nothing, sends no form and only types test values. You validate the Flow."
+msgstr ""
+
+#: includes/class-pathly-admin.php:352
+msgid "A Flow on a shop adds a product to a test cart at each run. Abandoned cart tools may count these carts or send reminders for them: exclude test@example.com and the Pathly Test name from them."
+msgstr ""
+
+#: includes/class-pathly-admin.php:363
+msgid "Ask Lumi to prepare the Flow"
+msgstr ""
+
+#: includes/class-pathly-admin.php:368
+msgid "Lumi is exploring your site. This page refreshes by itself."
+msgstr ""
+
+#: includes/class-pathly-admin.php:372
+msgid "Lumi found no Flow it could replay on this site. You can record one in Pathly."
+msgstr ""
+
+#: includes/class-pathly-admin.php:378
+msgid "Start again"
+msgstr ""
+
+#: includes/class-pathly-admin.php:390
+msgid "Add to cart, up to the payment page"
+msgstr ""
+
+#: includes/class-pathly-admin.php:391
+msgid "Contact form, filled and stopped before sending"
+msgstr ""
+
+#: includes/class-pathly-admin.php:392
+msgid "Login"
+msgstr ""
+
+#: includes/class-pathly-admin.php:397
+msgid "Other path"
+msgstr ""
+
+#. translators: %d: number of steps.
+#: includes/class-pathly-admin.php:400
+#, php-format
+msgid "%d step"
+msgid_plural "%d steps"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-pathly-admin.php:405
+msgid "Validate this Flow"
+msgstr ""
+
+#: includes/class-pathly-admin.php:416
+msgid "Status badge"
+msgstr ""
+
+#: includes/class-pathly-admin.php:417
+msgid "Off by default. Turned on, Pathly publishes a status page for your Ping and Flow, and the [pathly_badge] shortcode or the Pathly badge block shows its badge. The badge image is loaded from Pathly by your visitors' browsers."
+msgstr ""
+
+#: includes/class-pathly-admin.php:420
+msgid "Turn the badge off"
+msgstr ""
+
+#: includes/class-pathly-admin.php:420
+msgid "Turn the badge on"
+msgstr ""
+
+#: includes/class-pathly-admin.php:433
+msgid "Data sent to Pathly"
+msgstr ""
+
+#: includes/class-pathly-admin.php:434
+msgid "Nothing is sent before you connect a key. Then the plugin sends to api.pathlyhq.com only the address of your site and the versions of WordPress and of the plugin. No customer, order or visitor data."
+msgstr ""
+
+#: includes/class-pathly-admin.php:435
+msgid "Terms of service"
+msgstr ""
+
+#: includes/class-pathly-admin.php:435
+msgid "Privacy policy"
+msgstr ""
+
+#: includes/class-pathly-badge.php:45
+msgid "Site status, by Pathly"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:149
+msgid "Not set up"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:152
+msgid "OK"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:155
+msgid "Failing"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:157
+msgid "Waiting for the first run"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:169
+msgid "Connect your site to Pathly to see its Ping and its Flow here."
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:170
+msgid "Connect to Pathly"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:189
+msgid "Open Pathly"
+msgstr ""
+
+#. translators: %s: date and time of the failure.
+#: includes/class-pathly-dashboard.php:206
+#, php-format
+msgid "Last Flow failure: %s"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:211
+msgid "Screenshot of the step that failed"
+msgstr ""
+
+#. translators: %s: name of the Pathly plan.
+#: includes/class-pathly-dashboard.php:228
+#, php-format
+msgid "Plan: %s"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:237
+msgid "Runs"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:238
+msgid "Lumi trials today"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:239
+msgid "Spaces"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:247
+msgid "unlimited"
+msgstr ""
+
+#. translators: 1: quota name, 2: amount used, 3: limit.
+#: includes/class-pathly-dashboard.php:249
+#, php-format
+msgid "%1$s: %2$s / %3$s"
+msgstr ""
+
+#: includes/class-pathly-dashboard.php:255
+msgid "See plans"
+msgstr ""
+
+#: includes/class-pathly-flow.php:98
+msgid "Lumi has used all its trials for today on your plan. Try again tomorrow."
+msgstr ""
+
+#: includes/class-pathly-flow.php:100
+msgid "Lumi is very busy right now. Try again in a minute."
+msgstr ""
+
+#: includes/class-pathly-flow.php:103
+msgid "Pathly cannot reach this site from the internet. A site in maintenance mode, behind a password or on a local address cannot be watched."
+msgstr ""
+
+#: includes/class-pathly-flow.php:105
+msgid "Lumi is not available right now. You can create the Flow in Pathly."
+msgstr ""
+
+#: includes/class-pathly-flow.php:159
+msgid "Ask Lumi to prepare the Flow first."
+msgstr ""
+
+#: includes/class-pathly-http.php:83
+msgid "Pathly could not be reached. Try again in a minute."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: includes/class-pathly-http.php:93
+#, php-format
+msgid "Pathly answered with status %d."
+msgstr ""
+
+#: blocks/badge/index.js:16
+msgid "The Pathly badge is off. Turn it on in Settings, Pathly."
+msgstr ""
+
+#: blocks/badge/block.json
+msgctxt "block title"
+msgid "Pathly badge"
+msgstr ""
+
+#: blocks/badge/block.json
+msgctxt "block description"
+msgid "Status badge of your site, by Pathly. Off until you turn it on in Settings, Pathly."
+msgstr ""
+
+#: blocks/badge/block.json
+msgctxt "block keyword"
+msgid "status"
+msgstr ""
+
+#: blocks/badge/block.json
+msgctxt "block keyword"
+msgid "uptime"
+msgstr ""
+
+#: blocks/badge/block.json
+msgctxt "block keyword"
+msgid "badge"
+msgstr ""

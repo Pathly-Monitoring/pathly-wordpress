@@ -1,0 +1,51 @@
+.pathly-status,
+.pathly-quotas {
+	margin: 0 0 1em;
+}
+
+.pathly-status li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pathly-pill {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 10px;
+	font-size: 12px;
+	background: #f0f0f1;
+	color: #1d2327;
+}
+
+.pathly-pill--ok {
+	background: #d1f2e8;
+	color: #0a5c4a;
+}
+
+.pathly-pill--fail {
+	background: #fbe0e0;
+	color: #8a1f1f;
+}
+
+.pathly-error {
+	color: #b32d2e;
+}
+
+.pathly-shot {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #dcdcde;
+}
+
+.pathly-settings h2 {
+	margin-top: 2em;
+}
+
+.pathly-proposal {
+	padding: 8px 12px;
+	margin: 0 0 12px;
+	border: 1px solid #dcdcde;
+	background: #fff;
+	max-width: 640px;
+}

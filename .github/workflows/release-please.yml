@@ -1,0 +1,37 @@
+# Keeps a "chore(main): release x.y.z" PR up to date (CHANGELOG.md + version),
+# then copies the version into the plugin header, the readme and the block.
+# Merging it creates the vX.Y.Z tag and the GitHub release.
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+      - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.pr }}
+        with:
+          ref: ${{ fromJSON(steps.release.outputs.pr).headBranchName }}
+      - name: Version in the plugin files
+        if: ${{ steps.release.outputs.pr }}
+        run: |
+          node bin/sync-version.js
+          if ! git diff --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -am "chore: version des fichiers du plugin"
+            git push
+          fi

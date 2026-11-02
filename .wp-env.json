@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/wp-env.json",
+	"core": null,
+	"phpVersion": "8.3",
+	"testsEnvironment": false,
+	"port": 8890,
+	"plugins": [ "./dist/pathly" ],
+	"mappings": {
+		"wp-content/mu-plugins/pathly-api-mock.php": "./tests/integration/pathly-api-mock.php"
+	},
+	"config": {
+		"PATHLY_API_MOCK": true,
+		"WP_DEBUG": true,
+		"WP_DEBUG_LOG": true,
+		"WP_DEBUG_DISPLAY": false
+	}
+}

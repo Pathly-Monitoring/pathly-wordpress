@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<ruleset name="Pathly">
+	<description>WordPress Coding Standards and PHP 7.4+ compatibility.</description>
+
+	<file>pathly.php</file>
+	<file>uninstall.php</file>
+	<file>includes</file>
+	<file>blocks</file>
+
+	<arg name="extensions" value="php"/>
+	<arg name="colors"/>
+	<arg value="sp"/>
+
+	<config name="testVersion" value="7.4-"/>
+	<config name="minimum_wp_version" value="6.4"/>
+
+	<rule ref="WordPress"/>
+
+	<!-- index.asset.php is the name WordPress looks for next to a block script. -->
+	<rule ref="WordPress.Files.FileName.NotHyphenatedLowercase">
+		<exclude-pattern>blocks/*/index.asset.php</exclude-pattern>
+	</rule>
+	<rule ref="PHPCompatibilityWP"/>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="pathly"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="pathly"/>
+			</property>
+		</properties>
+	</rule>
+</ruleset>

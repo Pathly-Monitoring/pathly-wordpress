@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="tests/unit/bootstrap.php"
+         colors="true"
+         beStrictAboutOutputDuringTests="true"
+         convertDeprecationsToExceptions="true"
+         failOnRisky="true"
+         failOnWarning="true">
+    <testsuites>
+        <testsuite name="unit">
+            <directory suffix="Test.php">tests/unit</directory>
+        </testsuite>
+    </testsuites>
+    <coverage processUncoveredFiles="true" pathCoverage="true">
+        <include>
+            <file>pathly.php</file>
+            <file>uninstall.php</file>
+            <directory suffix=".php">includes</directory>
+            <directory suffix=".php">blocks</directory>
+        </include>
+    </coverage>
+</phpunit>

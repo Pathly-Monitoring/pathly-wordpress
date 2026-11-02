@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pathly/badge",
+	"version": "0.1.0",
+	"title": "Pathly badge",
+	"category": "widgets",
+	"icon": "shield",
+	"description": "Status badge of your site, by Pathly. Off until you turn it on in Settings, Pathly.",
+	"keywords": [ "status", "uptime", "badge" ],
+	"textdomain": "pathly",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./index.js"
+}
