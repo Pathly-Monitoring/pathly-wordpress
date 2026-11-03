@@ -1,5 +1,5 @@
 === Pathly – Uptime and Checkout Monitoring ===
-Contributors: pathlyhq
+Contributors: pathly
 Tags: uptime, monitoring, woocommerce, checkout, status page
 Requires at least: 6.4
 Tested up to: 7.1

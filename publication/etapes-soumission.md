@@ -13,7 +13,7 @@ Frais : **0 €**. Pas de commission. L'annuaire WordPress.org est gratuit.
 ## 1. Créer le compte WordPress.org
 
 - Adresse : https://login.wordpress.org/register
-- E-mail : `simon@pathlyhq.com`. Nom d'utilisateur conseillé : `pathlyhq`. **Il doit être identique** à la ligne `Contributors:` de `readme.txt`. Sinon, corriger cette ligne avant de soumettre.
+- E-mail : `simon@pathlyhq.com`. Nom d'utilisateur retenu : `pathly`. **Il doit être identique** à la ligne `Contributors:` de `readme.txt`. Sinon, corriger cette ligne avant de soumettre.
 - Activer la double authentification dans le profil (Account & Security). WordPress.org l'exige pour les auteurs d'extensions (non vérifié pour la date exacte de cette règle).
 - Un seul compte, au nom de Simon (règle `legal-comptes.md`).
 
