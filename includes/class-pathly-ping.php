@@ -46,6 +46,10 @@ class Pathly_Ping {
 			return '';
 		}
 		$host = preg_replace( '/^www\./', '', $parts['host'] );
+		// Two sites on one host differ by their port (a staging copy on :8080).
+		if ( isset( $parts['port'] ) && ! in_array( (int) $parts['port'], array( 80, 443 ), true ) ) {
+			$host .= ':' . $parts['port'];
+		}
 		$path = isset( $parts['path'] ) ? rtrim( $parts['path'], '/' ) : '';
 		return $host . $path;
 	}

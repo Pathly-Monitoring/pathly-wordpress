@@ -22,6 +22,8 @@ class PingTest extends TestCase {
 		$this->assertSame( 'shop.example', \Pathly_Ping::normalize( 'https://WWW.Shop.example/' ) );
 		$this->assertSame( 'shop.example/fr', \Pathly_Ping::normalize( 'http://shop.example/fr/' ) );
 		$this->assertSame( 'shop.example', \Pathly_Ping::normalize( 'https://shop.example' ) );
+		$this->assertSame( 'shop.example:8080/fr', \Pathly_Ping::normalize( 'http://shop.example:8080/fr/' ) );
+		$this->assertSame( 'shop.example', \Pathly_Ping::normalize( 'https://shop.example:443/' ) );
 		$this->assertSame( '', \Pathly_Ping::normalize( 'not a url' ) );
 		$this->assertSame( '', \Pathly_Ping::normalize( 'http:///x' ) );
 	}
