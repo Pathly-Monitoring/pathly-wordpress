@@ -3,7 +3,7 @@
  * Plugin Name:       Pathly – Uptime and Checkout Monitoring
  * Plugin URI:        https://pathlyhq.com/en/cms-modules
  * Description:       Connects your site to Pathly: a Ping on your home page, a Flow on your checkout, contact form or login, replayed after each update, and their status on your dashboard.
- * Version:           0.2.0
+ * Version:           0.2.1
  * Requires at least: 6.4
  * Requires PHP:      7.4
  * Author:            Pathly
@@ -18,7 +18,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'PATHLY_VERSION', '0.2.0' );
+define( 'PATHLY_VERSION', '0.2.1' );
 define( 'PATHLY_FILE', __FILE__ );
 define( 'PATHLY_DIR', __DIR__ );
 

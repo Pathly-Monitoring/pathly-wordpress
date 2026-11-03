@@ -4,7 +4,7 @@ Tags: uptime, monitoring, woocommerce, checkout, status page
 Requires at least: 6.4
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.2.0
+Stable tag: 0.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -106,6 +106,11 @@ Yes, site by site: each site connects with its own key. Deleting the plugin clea
 4. The status badge, off by default, here turned on: add it with the `[pathly_badge]` shortcode or the Pathly badge block.
 
 == Changelog ==
+
+= 0.2.1 =
+* l'adresse de l'extension pointe vers la page des modules
+* le contributeur WordPress.org est le compte pathly
+* même nom d'extension dans pathly.php et dans readme.txt
 
 = 0.2.0 =
 * extension Pathly pour WordPress et WooCommerce
