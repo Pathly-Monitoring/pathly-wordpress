@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Pathly
- * Plugin URI:        https://pathlyhq.com/
+ * Plugin URI:        https://pathlyhq.com/en/cms-modules
  * Description:       Connects your site to Pathly: a Ping on your home page, a Flow on your checkout, contact form or login, replayed after each update, and their status on your dashboard.
  * Version:           0.2.0
  * Requires at least: 6.4
