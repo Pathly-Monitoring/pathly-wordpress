@@ -50,6 +50,8 @@ Pathly then visits your site from its probes, like a visitor would: the Ping req
 
 When the badge is on, your visitors' browsers load the badge image from Pathly servers.
 
+When the Flow last failed, the dashboard box shows the screenshot of the failed step: the administrator's browser loads this image from the address given by the Pathly API. It is a screenshot of your own public pages, taken by the Pathly probe.
+
 * Terms of service: https://pathlyhq.com/en/legal/cgu
 * Privacy policy: https://pathlyhq.com/en/legal/privacy
 * Data processing agreement: https://pathlyhq.com/en/legal/dpa
@@ -107,14 +109,18 @@ Yes, site by site: each site connects with its own key. Deleting the plugin clea
 
 == Changelog ==
 
+= Unreleased =
+* The settings forms end the request right after their redirection.
+* The readme describes the screenshot of the last failure, loaded from Pathly in the dashboard box.
+
 = 0.2.0 =
-* extension Pathly pour WordPress et WooCommerce
-* le port compte pour retrouver le Ping et le Flow d'un site
+* Plugin for WordPress and WooCommerce: API key, Ping set up for you, Flow prepared by Lumi, replay after updates, dashboard box, status badge (shortcode and block).
+* The port of the site address is taken into account to find its Ping and its Flow.
 
 = 0.1.0 =
-* First version: API key, Ping set up for you, Flow prepared by Lumi, replay after updates, dashboard box, status badge (shortcode and block).
+* First version.
 
 == Upgrade Notice ==
 
-= 0.1.0 =
-First version.
+= 0.2.0 =
+First public version.

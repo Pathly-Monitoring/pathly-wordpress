@@ -163,6 +163,17 @@ class Pathly_Admin {
 		}
 		delete_transient( Pathly_Dashboard::CACHE );
 		wp_safe_redirect( self::page_url() );
+		$this->terminate();
+	}
+
+	/**
+	 * Ends the request once the redirection is sent. Replaced in tests.
+	 *
+	 * @codeCoverageIgnore
+	 * @return void
+	 */
+	protected function terminate() {
+		exit;
 	}
 
 	/**

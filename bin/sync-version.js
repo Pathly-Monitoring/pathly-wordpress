@@ -33,15 +33,14 @@ update( 'blocks/badge/index.asset.php', ( s ) => s.replace( /'version'(\s+)=> '[
 update( 'readme.txt', ( s ) => {
 	let out = s.replace( /^Stable tag: .+$/m, `Stable tag: ${ version }` );
 	if ( ! out.includes( `= ${ version } =` ) ) {
-		// Lines of the newest CHANGELOG.md section, as readme bullets.
-		const changelog = fs.readFileSync( path.join( root, 'CHANGELOG.md' ), 'utf8' );
-		const section = changelog.split( /^## /m )[ 1 ] || '';
-		const bullets = section
-			.split( '\n' )
-			.filter( ( l ) => /^\* /.test( l ) )
-			.map( ( l ) => '* ' + l.slice( 2 ).replace( /\s*\(\[[0-9a-f]{7,}\]\([^)]*\)\)\s*$/, '' ).replace( /\*\*/g, '' ) );
-		const entry = `= ${ version } =\n${ ( bullets.length ? bullets : [ '* Maintenance release.' ] ).join( '\n' ) }\n\n`;
-		out = out.replace( '== Changelog ==\n\n', `== Changelog ==\n\n${ entry }` );
+		// The readme is read by WordPress.org users: its changelog stays in
+		// English. Commit messages (French) are never copied into it. Notes
+		// are written by hand under "= Unreleased =", renamed at release time.
+		if ( out.includes( '\n= Unreleased =\n' ) ) {
+			out = out.replace( '\n= Unreleased =\n', `\n= ${ version } =\n` );
+		} else {
+			out = out.replace( '== Changelog ==\n\n', `== Changelog ==\n\n= ${ version } =\n* Maintenance release.\n\n` );
+		}
 	}
 	return out;
 } );

@@ -3,7 +3,7 @@
 The source of the listing is `readme.txt` at the root of the repository: WordPress.org reads its title, short description, description, FAQ, screenshot captions and changelog. This file sums up what to check before submitting.
 
 - **Title**: Pathly – Uptime and Checkout Monitoring
-- **Plugin name in the header** (`pathly.php`): Pathly. The directory derives the slug `pathly` from it, which matches the text domain.
+- **Plugin name in the header** (`pathly.php`): the same as the title. The slug `pathly`, which matches the text domain, was reserved at the first submission (03/11/2026), when the header still said "Pathly".
 - **Short description** (150 characters max): Know that your checkout, contact form or login still works. A Ping on your site, a Flow in a real browser, replayed after each update.
 - **Tags** (5 max): uptime, monitoring, woocommerce, checkout, status page
 - **Description, external service section, FAQ, changelog**: see `readme.txt`. Validate it with https://wordpress.org/plugins/developers/readme-validator/ after any change.
