@@ -90,7 +90,7 @@ class AdminTest extends TestCase {
 	private function admin() {
 		$mock = $this->mock;
 		$keys = &$this->keys;
-		return new \Pathly_Admin(
+		return new TestableAdmin(
 			static function ( $key ) use ( $mock, &$keys ) {
 				$keys[] = $key;
 				return $mock;
@@ -163,8 +163,10 @@ class AdminTest extends TestCase {
 
 	public function test_handle_checks_the_nonce_and_redirects() {
 		$this->options['transient_pathly_dashboard'] = array( 'old' );
-		$this->admin()->handle( 'flow_cancel' );
+		$admin = $this->admin();
+		$admin->handle( 'flow_cancel' );
 		$this->assertSame( array( 'nonce:pathly_flow_cancel', 'redirect:https://shop.example/wp-admin/options-general.php?page=pathly' ), $this->calls );
+		$this->assertSame( 1, $admin->terminated );
 		$this->assertArrayNotHasKey( 'transient_pathly_dashboard', $this->options );
 	}
 
@@ -378,7 +380,7 @@ class AdminTest extends TestCase {
 		Functions\when( 'wp_remote_retrieve_body' )->justReturn( '{"error":"Unauthorized"}' );
 		Functions\expect( 'wp_remote_request' )->once()->andReturn( array() );
 		$_POST['pathly_api_key'] = 'sp_live_0123456789abcdef';
-		( new \Pathly_Admin() )->handle( 'connect' );
+		( new TestableAdmin() )->handle( 'connect' );
 		$this->assertStringContainsString( 'refused this key', $this->notice()['message'] );
 	}
 
