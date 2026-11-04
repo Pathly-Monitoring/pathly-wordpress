@@ -9,7 +9,7 @@ Page : https://wordpress.org/plugins/developers/add/ , connecté avec le compte 
 | Élément de la page | Quoi faire |
 |---|---|
 | Soumission en attente « Pathly » | Elle doit apparaître, avec l'adresse `https://wordpress.org/plugins/pathly/`. Vérifier que le slug est bien `pathly`. Ne pas le changer. |
-| Upload a new version (ou bouton équivalent sur la soumission en attente) | Envoyer `C:\exploit\soumissions-modules\wordpress-pathly-0.2.1.zip` (moins de 10 Mo : 118 ko). Possible seulement tant que la revue n'a pas commencé. |
+| Upload a new version (ou bouton équivalent sur la soumission en attente) | Envoyer `C:\exploit\soumissions-modules\wordpress-pathly-0.2.1.zip` (47 ko). Possible seulement tant que la revue n'a pas commencé. |
 | Cases à cocher | Les lire avant de cocher. Elles portent sur le respect des règles de l'annuaire, la licence GPL de l'extension et de ce qu'elle contient, et le droit de la publier. L'extension est en GPL-2.0-or-later et n'embarque aucune bibliothèque tierce. |
 
 Si la page ne propose plus d'envoyer une nouvelle version (revue commencée), ne pas soumettre une seconde extension : répondre au message de revue en joignant le lien de l'archive, ou attendre les remarques du relecteur.
