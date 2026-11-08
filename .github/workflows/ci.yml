@@ -66,6 +66,9 @@ jobs:
             php: "8.1"
           - wordpress: previous
             php: "7.4"
+          - wordpress: latest
+            php: "8.3"
+            build: --wporg
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -87,6 +90,8 @@ jobs:
           fi
           echo "WP_ENV_PHP_VERSION=${{ matrix.php }}" >> "$GITHUB_ENV"
       - name: Install, configure, update hook, badge, Plugin Check, uninstall
+        env:
+          PATHLY_BUILD_FLAG: ${{ matrix.build }}
         run: bash tests/integration/run.sh
 
   build:

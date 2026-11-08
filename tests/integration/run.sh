@@ -46,7 +46,7 @@ post() {
 contains() { grep -q -- "$1" "$PAGE" || fail "$2"; }
 
 step "Build and start WordPress"
-bash bin/build.sh >/dev/null
+bash bin/build.sh ${PATHLY_BUILD_FLAG:-} >/dev/null
 npx wp-env start >/dev/null
 wp plugin deactivate pathly >/dev/null || true
 wp option delete pathly_api_key pathly_state pathly_mock_calls >/dev/null || true
